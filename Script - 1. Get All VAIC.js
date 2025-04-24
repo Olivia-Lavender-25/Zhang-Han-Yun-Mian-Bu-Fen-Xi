@@ -28,7 +28,7 @@ console.log(totalDuration)
 // j = j.map(j => j.data.map(j => j.aweme_info)).flat().filter(a => !!a)
 
 
-let N = 1, inc = 50
+let N = 2, inc = 50
 let start = N * inc , end = (N + 1) * inc
 end = j.length - start > 65 ? Math.min(end, j.length - 1) : Math.max(end, j.length - 1)
 // start = 0, end = j.length
@@ -37,7 +37,6 @@ let state = {
     downloadVAIC: true,
     json: false
 }
-
 
 // state.downloadVAIC = false
 // state.json = true
@@ -91,7 +90,7 @@ let J = j.slice(start, end).map((j, i) => {
                 let fnObj = {videoFilename, musicFilename, imagesFilenames, coverFilename}
                 console.log(i, fnObj)
                 allFnObjs.push(fnObj)
-            }, state.json ? 0 : 4500 * i);
+            }, state.json ? 0 : 3000 * i);
 
         })
 
