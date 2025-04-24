@@ -28,7 +28,7 @@ console.log(totalDuration)
 // j = j.map(j => j.data.map(j => j.aweme_info)).flat().filter(a => !!a)
 
 
-let N = 3, inc = 50
+let N = 0, inc = 50
 let start = N * inc , end = (N + 1) * inc
 end = j.length - start > 65 ? Math.min(end, j.length - 1) : Math.max(end, j.length - 1)
 // start = 0, end = j.length
